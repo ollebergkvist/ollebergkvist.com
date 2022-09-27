@@ -21,6 +21,9 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.7",
+    "daisyui": "^2.31.0",
     "husky": "^8.0.1"
   }
 }
