@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["plugin:astro/recommended"],
+  extends: ["plugin:astro/recommended", "plugin:unicorn/recommended"],
   overrides: [
     {
       // Define the configuration for `.astro` file.
