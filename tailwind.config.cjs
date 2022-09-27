@@ -4,7 +4,6 @@ module.exports = {
   theme: {
     fontFamily: {
       press: ['"Press Start 2P"', 'cursive'],
-      oswald: ['Oswald', 'sans'],
     },
     extend: {},
     //
