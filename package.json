@@ -4,8 +4,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "predev": "yarn localize",
     "dev": "NODE_ENV=development astro dev",
     "start": "astro dev",
+    "prebuild": "yarn localize",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
