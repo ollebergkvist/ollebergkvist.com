@@ -1,10 +1,30 @@
 ---
+// libs
+import i18next, { t, setDefaultNamespace } from 'i18next'
+import { Trans, HeadHrefLangs } from 'astro-i18next/components'
+// layout
 import Layout from '../layouts/Layout.astro'
+// locale
+setDefaultNamespace('home')
 ---
 
-<Layout title="Ollebergkvist.com | Fullstack Developer">
+<Layout
+  title="Ollebergkvist.com | Fullstack Developer"
+  description={t('site.description')}
+  headHrefLangs={HeadHrefLangs}
+  lang={i18next.language}
+>
   <section class="mx-auto flex h-screen items-center justify-center px-4">
-    <h1 class="font-press text-2xl lg:text-4xl">COMING SOON...</h1>
+    <h1 class="font-press text-2xl lg:text-4xl">{t('myHomeTitle')}</h1>
+    <p>
+      <Trans i18nKey="myHomeDescription">
+        This translation is loaded from the default <strong>home</strong> namespace!
+      </Trans>
+    </p>
+    <p>
+      <Trans i18nKey="myCommonCTA" ns="common">
+        This translation is loaded from the <strong>common</strong> namespace!
+      </Trans>
+    </p>
   </section>
-  <img src="./" />
 </Layout>
