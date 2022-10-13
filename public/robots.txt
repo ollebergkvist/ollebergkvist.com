@@ -1,0 +1,2 @@
+Disallow: /cv
+Disallow: /legacy
